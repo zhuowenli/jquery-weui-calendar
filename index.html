@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>日期选择</title>
+    <link rel="stylesheet" href="libs/weui.min.css">
+    <link rel="stylesheet" href="libs/jquery-weui.css">
+    <link rel="stylesheet" href="dist/calendar.css">
+    <style type="text/css">
+        .container{
+            padding: 15px;
+        }
+        #calendar{
+            border: 1px solid  #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container js_container" id="container">
+        <!-- !!! 初始值这里设置 !!! -->
+        <input id="calendar" class="weui_input" type="text" value="2016-07-31 上午 至 2016-08-30 下午" data-start-time="2016-07-31" data-end-time="2016-08-30"  data-start-value="am" data-end-value="pm">
+    </div>
+
+    <script type="text/javascript" src="libs/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="libs/jquery-weui.min.js"></script>
+    <script type="text/javascript" src="dist/calendar.js"></script>
+    <script type="text/javascript">
+        // 弹窗用input！
+        $('#calendar').MultiCalendar({
+            title: '时间选择',
+            totalMohth: 12, // 总月数
+            dayText: ['入住', '离开'],
+            valueTypes: [
+                {
+                    title: '上午',
+                    value: 'am'
+                }, {
+                    title: '下午',
+                    value: 'pm'
+                }
+            ]
+        });
+
+        // 内联用div！
+        // $('#calendar2').MultiCalendar({
+        //     checkIn : null, // 初始化开始时间
+        //     checkOut: null, // 初始化结束时间，只有当开始时间和
+        //     totalMohth: 12, // 总月数
+        //     dayText: ['入住', '离开'],
+        //     checkDayChange: function(){
+        //         console.log(this.dayText[0], this.checkIn ? this.checkIn.format('yyyy-MM-dd') : '-');
+        //         console.log(this.dayText[1], this.checkOut ? this.checkOut.format('yyyy-MM-dd') : '-');
+        //     },
+        // });
+    </script>
+</body>
+</html>
