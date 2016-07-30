@@ -34,6 +34,30 @@ $('#calendar').MultiCalendar({
 `dayText`    | `['开始', '结束']` | Array, 选中标识
 `valueTypes` | `null`            | 辅助时间选择器，比如：上午、下午，1点、2点、3点等。
 
+例如，可以这样使用：
+
+```js
+$('#calendar').MultiCalendar({
+    title: '时间选择',
+    totalMohth: 12,
+    dayText: ['入住', '离开'],
+    valueTypes: [
+        {
+            title: '9: 30 ~ 12: 00',
+            value: 'morning'
+        }, {
+            title: '13: 30 ~ 18: 00',
+            value: 'afternoon'
+        }, {
+            title: '19: 30 ~ 22: 00',
+            value: 'evening'
+        }
+    ]
+});
+```
+
+
+
 ### 设置初始值：
 
 ```html
