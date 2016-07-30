@@ -27,12 +27,12 @@ $('#calendar').MultiCalendar({
 });
 ```
 
-\             |  Default         | Description
-：-----------|------------------|------------
-`title`      | 时间选择          | String, 日历弹窗标题
-`totalMohth` | 6                | Number, 可选月份长度
+\            |  Default          | Description
+:------------|:------------------|:-----------
+`title`      | 时间选择           | String, 日历弹窗标题
+`totalMohth` | 6                 | Number, 可选月份长度
 `dayText`    | `['开始', '结束']` | Array, 选中标识
-`valueTypes` | `null`           | 辅助时间选择器，比如：上午、下午，1点、2点、3点等。
+`valueTypes` | `null`            | 辅助时间选择器，比如：上午、下午，1点、2点、3点等。
 
 ### 设置初始值：
 
@@ -47,10 +47,10 @@ $('#calendar').MultiCalendar({
     data-end-value="pm">
 ```
 
-\                   |  Default  | Description
-：-----------------|-----------|------------
-`data-start-time`  | `null`    | 开始时间
-`data-end-time`    | `null`    | 结束时间
-`data-start-value` | `null`    | 开始value值
-`data-end-value`   | `null`    | 结束value值
+\                  |  Default | Description
+:------------------|:---------|:------------
+`data-start-time`  | `null`   | 开始时间
+`data-end-time`    | `null`   | 结束时间
+`data-start-value` | `null`   | 开始value值
+`data-end-value`   | `null`   | 结束value值
 
