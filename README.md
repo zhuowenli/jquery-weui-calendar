@@ -4,6 +4,8 @@
 
 该项目依赖于[weui](https://github.com/weui/weui)、[jquery-weui](https://github.com/lihongxun945/jquery-weui)。
 
+内联使用请参考：[https://github.com/zhuowenli/jquery-calendar](https://github.com/zhuowenli/jquery-calendar)
+
 ## Usage
 
 ```html
@@ -55,7 +57,6 @@ $('#calendar').MultiCalendar({
     ]
 });
 ```
-
 
 
 ### 设置初始值：
