@@ -389,7 +389,7 @@
                         </div>\
                     </div>\
                     <div class="weui-calendar-centent">\
-                        <div id="calendar-box" class="calendar"></div>\
+                        <div class="calendar J_Calendar"></div>\
                     </div>\
                 </div> \
             </div> \
@@ -417,7 +417,7 @@
     CalendarBox.prototype.bindEvent = function(options) {
         var $input = this.$input;
         var $calendar = $('.weui-calendar-container');
-        var $calendarBox = $('#calendar-box');
+        var $calendarBox = $calendar.find('.J_Calendar');
         var $checkinDate = $('#checkin-date');
         var $checkoutDate = $('#checkout-date');
         var $checkinValue = $("#checkin-value");
